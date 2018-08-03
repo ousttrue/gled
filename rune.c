@@ -202,7 +202,7 @@ RuneDrawResult rune_DrawImg(Rune *rune, uint32_t x, uint32_t y) {
 /* rune_DrawMesh renders a mesh at char position (x, y) */
 RuneDrawResult rune_DrawMesh(Rune *r, uint32_t x, uint32_t y) {
 	MeshRune *mr;
-	RuneDrawResult res = {};
+	RuneDrawResult res = {0};
 	mr = (MeshRune *)r;
 
 	if (mr->mesh.color == 0) {
